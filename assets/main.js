@@ -8,9 +8,9 @@ const inr=n=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maxi
 // Set visible name elements and page title
 document.querySelectorAll("[data-name]").forEach(e=>e.textContent=DATA.name);
 document.title = DATA.name;
-// Update aria-labels and image alts that reference the old name
-document.querySelectorAll('[aria-label]').forEach(e=>{const a=e.getAttribute('aria-label');if(a&&a.includes('K2 Classes'))e.setAttribute('aria-label',a.replace(/K2 Classes/g,DATA.name));});
-document.querySelectorAll('img[alt]').forEach(i=>{if(i.alt&&i.alt.includes('K2 Classes'))i.alt = i.alt.replace(/K2 Classes/g,DATA.name);});
+// Update aria-labels and image alts that reference the old name (handle several common variants)
+document.querySelectorAll('[aria-label]').forEach(e=>{const a=e.getAttribute('aria-label');if(a&&/K2 Classes|k2class|K2 Classes home/i.test(a))e.setAttribute('aria-label',a.replace(/K2 Classes|k2class/gi,DATA.name));});
+document.querySelectorAll('img[alt]').forEach(i=>{if(i.alt&&/K2 Classes|k2class/i.test(i.alt))i.alt = i.alt.replace(/K2 Classes|k2class/gi,DATA.name);});
 
 $("tagline").textContent=DATA.tagline;
 $("callBtn").href="tel:"+DATA.phone.replace(/\s/g,"");

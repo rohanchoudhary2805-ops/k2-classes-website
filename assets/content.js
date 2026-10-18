@@ -2,7 +2,7 @@
    Topper photos live in the photos folder (same file name as written below). */
 
 const DATA={
- name:"k2class",
+ name:"k2class.in",
  tagline:"Small batches, experienced teachers and regular tests to help every student reach their best marks.",
  phone:"+91 93241 12547",whatsapp:"919324112547",
  address:"K2 Dance & Tuition classes, Pride1, plot no 16, Kalundre, Kalundre Gaon, Panvel, Maharashtra 410221",
@@ -19,7 +19,7 @@ const DATA={
    batches:[["CBSE · Classes 7–10","4:30–6:00 PM"],["State Board · Classes 7–10","6:00–7:30 PM"],["Combined","8:00–9:30 PM"]],
    week:[["Monday","Maths","Maths","Maths / Science"],["Tuesday","Maths","Maths","Maths / Science"],["Wednesday","Science","Science","English / Social Science"],["Thursday","Science","Science","En...
  fees:[["Nursery",500,500,500],["Junior KG",500,500,500],["Senior KG",500,500,500],["Class 1",550,500,650],["Class 2",650,600,700],["Class 3",700,650,800],["Class 4",800,750,1000],["Class 5",800,7...
- tshirt:{price:200,description:"Black k2class T-shirt with a white K2 logo printed on the chest. Available in black only.",sizes:["S","M","L","XL"]},
+ tshirt:{price:200,description:"Black k2class.in T-shirt with a white K2 logo printed on the chest. Available in black only.",sizes:["S","M","L","XL"]},
  achievements:[
   {number:100,suffix:"+",label:"Students Enrolled",icon:"🎓"},
   {number:5,suffix:"+",label:"Years of Teaching",icon:"📚"},
