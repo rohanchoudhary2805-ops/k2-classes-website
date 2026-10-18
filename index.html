@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>K2 Classes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top" aria-label="K2 Classes home"><svg width="34" height="28" viewBox="0 0 30 26" aria-hidden="true"><polygon points="0,26 12,4 18,14 22,8 30,26" fill="#f26b21"/><polygon points="12,4 15,9 12,8 9,9" fill="#fff"/></svg><span data-name>K2 Classes</span></a>
+  <nav aria-label="Main"><a href="#toppers">Toppers</a><a href="#teachers">Teachers</a><a href="#timings">Timings</a><a href="#fees">Fees</a><a href="#tshirt">T-shirt</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+  <h1>Climb higher with <span data-name>K2 Classes</span></h1>
+  <p id="tagline"></p>
+  <div class="actions"><a class="btn" href="#timings">See batch timings</a><a class="btn ghost" id="callBtn" href="#contact">Call us</a></div></div>
+  <svg viewBox="0 0 1200 210" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,210 0,140 160,70 260,120 420,30 560,110 700,60 860,130 1000,50 1200,120 1200,210" fill="#262626"/><polygon points="0,210 0,170 200,110 340,160 520,80 680,150 860,100 1040,160 1200,110 1200,210" fill="#3a3a3a"/><polygon points="520,80 545,105 525,100 505,108" fill="#fff"/><polygon points="420,30 440,52 424,48 408,54" fill="#fff"/><polygon points="0,210 0,195 260,165 480,190 760,170 1000,192 1200,172 1200,210" fill="#0b0b0b"/></svg>
+</section>
+<section class="section stats-section" id="achievements"><div class="wrap"><div class="stats-grid" id="statsGrid"></div></div></section>
+<section class="section alt" id="announcements"><div class="wrap"><h2>📢 Announcements</h2><p class="lead">Stay updated with the latest news from K2 Classes.</p><div class="announce-list" id="announceList"></div></div></section>
+<section class="section" id="toppers"><div class="wrap"><h2>Our toppers</h2><p class="lead">Congratulations to our toppers.</p><ol class="leader" id="topperList"></ol></div></section>
+<section class="section alt" id="teachers"><div class="wrap"><h2>Meet your teachers</h2><p class="lead">Every subject is taught by a teacher who knows it inside out.</p><div class="teachers" id="teacherList"></div></div></section>
+<section class="section" id="timings"><div class="wrap"><h2>Branch timings</h2><p class="lead">Find your batch at our Kalundre or Bhingari branch. All timings are in the evening.</p><div id="branches"></div></div></section>
+<section class="section alt" id="fees"><div class="wrap"><h2>Yearly fees</h2><p class="lead">The same fees apply at Kalundre and Bhingari. All amounts are in Indian rupees, calculated as the monthly fee × 12 months.</p>
+  <div class="tablebox fee" tabindex="0" role="region" aria-label="Yearly fees, scroll sideways on small screens"><table><caption class="sr">Yearly tuition fees for both branches</caption><thead><tr><th scope="col">Class</th><th scope="col">State Board<br>English medium</th><th scope="col">State Board<br>Semi-English medium</th><th scope="col">CBSE</th></tr></thead><tbody id="feeRows"></tbody></table></div>
+  <p class="fee-note">Example: ₹500 per month × 12 = ₹6,000 per year.</p><a class="btn" id="feeBtn" href="#contact" target="_blank" rel="noopener noreferrer">Ask about fees</a></div></section>
+<section class="section" id="tshirt"><div class="wrap shop">
+  <div class="tee"><img src="photos/k2-black-tshirt.jpg" width="900" height="1085" alt="Black K2 Classes T-shirt with a white K2 logo printed on the chest" loading="lazy"></div>
+  <div><h2><span data-name>K2 Classes</span> T-shirt</h2><p class="lead" id="teeDesc"></p><div class="price" id="teePrice"></div>
+  <div class="opt"><p id="sizeLabel">Size</p><div class="chips" id="sizes" role="group" aria-labelledby="sizeLabel"></div></div>
+  <div class="opt"><p>Colour: Black</p></div>
+  <a class="btn" id="orderBtn" href="#contact" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a></div></div></section>
+<section class="section alt" id="gallery"><div class="wrap"><h2>Life at K2 Classes</h2><p class="lead">A look inside our classrooms and events.</p><div class="gallery"><figure><button type="button" class="shot" data-cap="Proud students with their certificates"><img src="photos/gallery-certificates.jpg" alt="Group of students holding up certificates in front of the K2 Classes shop" loading="lazy"></button><figcaption>Proud students with their certificates</figcaption></figure><figure><button type="button" class="shot" data-cap="Quiet reading time in class"><img src="photos/gallery-reading.jpg" alt="Students reading story books at their desks while a teacher stands behind them" loading="lazy"></button><figcaption>Quiet reading time in class</figcaption></figure><figure><button type="button" class="shot" data-cap="Drawing activity day"><img src="photos/gallery-drawing.jpg" alt="Students in a classroom holding up their drawings" loading="lazy"></button><figcaption>Drawing activity day</figcaption></figure><figure><button type="button" class="shot" data-cap="Our centre at Kalundre"><img src="photos/gallery-shopfront.jpg" alt="Shopfront with the K2 Coaching Classes and K2 Dance Academy signboards" loading="lazy"></button><figcaption>Our centre at Kalundre</figcaption></figure></div></div></section>
+<dialog id="lightbox" aria-label="Photo viewer"><button type="button" id="lbClose" class="lbx" aria-label="Close photo">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+<section class="section" id="contact"><div class="wrap contact"><div><h2>Visit us</h2><dl><dt>Address</dt><dd id="address"></dd><dt>Phone</dt><dd id="phone"></dd><dt>Office hours</dt><dd id="office"></dd></dl></div>
+  <div class="mapbox"><div><p>See how to reach the classes from where you are.</p><a class="btn" id="mapBtn" href="#contact" target="_blank" rel="noopener noreferrer">Get directions</a></div></div></div></section>
+</main>
+<div class="ridge" aria-hidden="true"><svg viewBox="0 0 1200 90" preserveAspectRatio="none"><polygon points="0,90 0,50 120,20 240,55 380,10 520,52 680,24 840,58 980,18 1200,48 1200,90" fill="#1c1c1c"/><polygon points="0,90 0,70 200,45 360,68 560,38 760,66 960,44 1200,66 1200,90" fill="#000"/></svg></div>
+<footer class="foot"><span data-name>K2 Classes</span> © <span id="year"></span>. All rights reserved.</footer>
+<script src="assets/content.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
